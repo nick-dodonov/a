@@ -1,0 +1,11 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "type": "command",
+        "command": "node scripts/memory-hooks/stop.js",
+        "timeout": 10
+      }
+    ]
+  }
+}

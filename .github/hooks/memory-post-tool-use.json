@@ -1,0 +1,11 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "type": "command",
+        "command": "node scripts/memory-hooks/post-tool-use.js",
+        "timeout": 8
+      }
+    ]
+  }
+}

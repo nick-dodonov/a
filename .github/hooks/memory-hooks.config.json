@@ -1,0 +1,29 @@
+{
+  "endpoint": "http://127.0.0.1:8000",
+  "apiKey": "your-secure-api-key-here",
+  "userOverrides": {
+    "forceRemember": "#remember",
+    "forceSkip": "#skip",
+    "skipWins": true
+  },
+  "projectTagPrefix": "proj",
+  "queryLimit": 4,
+  "startQueries": [
+    "{project} architecture decisions",
+    "{project} recent work",
+    "{project} open issues"
+  ],
+  "captureTools": [
+    "create_file",
+    "apply_patch",
+    "run_in_terminal",
+    "replace_string_in_file",
+    "insert_edit_into_file",
+    "delete_file",
+    "create_directory"
+  ],
+  "maxToolInputChars": 500,
+  "maxToolResponseChars": 500,
+  "sessionSummaryMaxTurns": 8,
+  "requestTimeoutMs": 4000
+}
