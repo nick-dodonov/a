@@ -1,0 +1,2 @@
+# Ignore mcp memory service submodule - used as a dependency for tests
+/mcp-memory-service/
