@@ -1,0 +1,12 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "type": "command",
+        "command": "python3 .vscode/scripts/ov-hooks/auto-capture.py",
+        "timeout": 30
+      }
+    ]
+  }
+}

@@ -1,2 +1,5 @@
 # Ignore submodules - used as a dependencies for tests
 /ext/
+
+.vscode/scripts/ov-hooks/.logs/
+.vscode/scripts/ov-hooks/.states/

@@ -1,0 +1,12 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "type": "command",
+        "command": "python3 .vscode/scripts/ov-hooks/auto-recall.py",
+        "timeout": 8
+      }
+    ]
+  }
+}

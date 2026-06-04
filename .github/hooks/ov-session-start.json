@@ -1,0 +1,11 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "python3 .vscode/scripts/ov-hooks/session-start.py",
+        "timeout": 60
+      }
+    ]
+  }
+}

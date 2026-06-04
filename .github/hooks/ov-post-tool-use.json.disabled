@@ -1,0 +1,12 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "",
+        "type": "command",
+        "command": "python3 .vscode/scripts/ov-hooks/post-tool-use.py",
+        "timeout": 8
+      }
+    ]
+  }
+}

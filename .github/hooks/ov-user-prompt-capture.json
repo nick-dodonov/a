@@ -1,0 +1,12 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "type": "command",
+        "command": "python3 .vscode/scripts/ov-hooks/user-prompt-capture.py",
+        "timeout": 8
+      }
+    ]
+  }
+}
