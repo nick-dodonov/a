@@ -1,6 +1,8 @@
 {
   "comment": "Used with CLI copilot agent",
   "mcpServers": {
+  },
+  "mcpServers-ARCHIVE": {
     "memoryService": {
       "type": "http",
       "url": "http://localhost:8000/mcp",
