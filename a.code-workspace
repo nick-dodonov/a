@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../.hermes"
+		},
+		{
+			"path": "../../../.openviking"
+		}
+	],
+	"settings": {}
+}
