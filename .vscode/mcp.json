@@ -1,18 +1,10 @@
 {
   "servers": {
     "openviking": {
+      "type": "http",
       "url": "http://localhost:1933/mcp",
       "headers": {
         "Authorization": "Bearer my-secret-root-key-change-me"
-      }
-    }
-  },
-  "servers-ARCHIVE": {
-    "memoryService": {
-      "type": "http",
-      "url": "http://localhost:8000/mcp",
-      "headers": {
-        "X-API-Key": "your-secure-api-key-here"
       }
     }
   }
