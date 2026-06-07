@@ -1,6 +1,5 @@
 {
   "$schema": "https://app.kilo.ai/config.json",
-  // Kilo project configuration
   "mcp": {
     "openviking": {
       "type": "remote",
@@ -9,5 +8,22 @@
         "Authorization": "Bearer my-secret-root-key-change-me"
       }
     }
+  },
+  "permission": {
+    "openviking_health": "allow",
+    "openviking_list": "allow",
+    "openviking_read": "allow",
+    "openviking_find": "allow",
+    "openviking_search": "allow",
+    "openviking_grep": "allow",
+    "openviking_glob": "allow",
+    "openviking_remember": "allow",
+    "openviking_add_resource": "allow",
+    "openviking_code_outline": "allow",
+    "openviking_code_search": "allow",
+    "openviking_code_expand": "allow",
+    "openviking_list_watches": "allow",
+    "openviking_cancel_watch": "allow",
+    "openviking_forget": "ask"
   }
 }
