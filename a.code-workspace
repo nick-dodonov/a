@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "../../../.openviking"
+		},
+		{
+			"path": "../../../.copilot"
 		}
 	],
 	"settings": {}

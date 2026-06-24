@@ -14,8 +14,9 @@
 
 services:
   openviking:
-    #image: ghcr.io/volcengine/openviking:latest
-    image: openviking/openviking:latest
+    # image: ghcr.io/volcengine/openviking:latest
+    # image: openviking/openviking:latest
+    image: openviking/openviking:v0.4.5
     container_name: openviking
     # Direct access (optional — caddy:1934 is the recommended single entry
     # point). Comment this out once Caddy is your only ingress.

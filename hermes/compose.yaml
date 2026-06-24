@@ -1,6 +1,7 @@
 services:
   hermes:
-    image: nousresearch/hermes-agent:latest
+    image: nousresearch/hermes-agent:v2026.6.19
+    # image: nousresearch/hermes-agent:latest
     container_name: hermes
     restart: unless-stopped
     command: gateway run
@@ -11,19 +12,19 @@ services:
       - ~/.hermes:/opt/data
     environment:
       - HERMES_DASHBOARD=1
-      - HERMES_DASHBOARD_INSECURE=1 # TODO: Install a DashboardAuthProvider plugin
 
+      ####
       # gateway is now running under s6 supervision (auto-restart on crash, dashboard supervised alongside if HERMES_DASHBOARD is set).
       # This is the recommended setup for the s6 container image — the gateway will keep running even if it crashes.
       # Use `--no-supervise` (or HERMES_GATEWAY_NO_SUPERVISE=1) to opt out and get the pre-s6 foreground behavior instead.
-      - HERMES_GATEWAY_NO_SUPERVISE=1
+      # - HERMES_GATEWAY_NO_SUPERVISE=1
 
       # Uncomment to forward specific env vars instead of using .env file:
       # - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
       # - OPENAI_API_KEY=${OPENAI_API_KEY}
       # - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
 
-      ####
+      ## - HERMES_DASHBOARD_INSECURE=1 # TODO: Install a DashboardAuthProvider plugin
       - TZ=Europe/Berlin
     deploy:
       resources:
